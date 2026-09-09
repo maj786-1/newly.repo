@@ -1,0 +1,481 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Bollywood Actress Instagram Search</title>
+
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #0b0d12;
+    color: white;
+    min-height: 100vh;
+}
+
+/* HEADER */
+
+header {
+    text-align: center;
+    padding: 55px 20px 45px;
+
+    background:
+        linear-gradient(
+            135deg,
+            #161a2b,
+            #e2ff03,
+            #171b30
+        );
+}
+
+header h1 {
+    font-size: clamp(32px, 6vw, 55px);
+    margin-bottom: 12px;
+}
+
+header p {
+    color: #c8cad5;
+    font-size: 16px;
+}
+
+/* SEARCH */
+
+.search-container {
+    max-width: 750px;
+    margin: 30px auto 0;
+}
+
+#search {
+    width: 100%;
+
+    padding: 18px 24px;
+
+    border: none;
+    outline: none;
+
+    border-radius: 40px;
+
+    font-size: 17px;
+
+    background: white;
+    color: #222;
+
+    box-shadow:
+        0 10px 35px rgba(0,0,0,.35);
+}
+
+/* MAIN */
+
+.container {
+    width: min(1200px, 92%);
+    margin: 40px auto;
+}
+
+/* BUTTONS */
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+
+    gap: 12px;
+
+    margin-bottom: 35px;
+}
+
+.buttons button {
+    border: none;
+
+    padding: 11px 20px;
+
+    border-radius: 25px;
+
+    cursor: pointer;
+
+    background: #00040c;
+    color: white;
+
+    transition: .2s;
+}
+
+.buttons button:hover {
+    background: #343a49;
+}
+
+/* RESULTS */
+
+.results {
+    display: grid;
+
+    grid-template-columns:
+        repeat(
+            auto-fit,
+            minmax(250px, 1fr)
+        );
+
+    gap: 25px;
+}
+
+/* CARD */
+
+.card {
+    background: #151821;
+
+    border-radius: 18px;
+
+    padding: 25px;
+
+    text-align: center;
+
+    box-shadow:
+        0 10px 30px rgba(0,0,0,.35);
+
+    transition: .25s;
+}
+
+.card:hover {
+    transform: translateY(-7px);
+
+    box-shadow:
+        0 18px 45px rgba(0,0,0,.55);
+}
+
+/* INSTAGRAM ICON */
+
+.instagram-icon {
+    width: 80px;
+    height: 80px;
+
+    margin: auto;
+
+    border-radius: 22px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    font-size: 40px;
+
+    background:
+        linear-gradient(
+            135deg,
+            #833ab4,
+            #fd1d1d,
+            #fcb045
+        );
+}
+
+/* CARD TEXT */
+
+.card h2 {
+    margin-top: 18px;
+
+    font-size: 22px;
+}
+
+.card p {
+    margin-top: 8px;
+
+    color: #aeb3c1;
+
+    line-height: 1.5;
+}
+
+/* INSTAGRAM BUTTON */
+
+.instagram-button {
+    display: inline-block;
+
+    margin-top: 20px;
+
+    padding: 12px 22px;
+
+    border-radius: 25px;
+
+    text-decoration: none;
+
+    background:
+        linear-gradient(
+            135deg,
+            #833ab4,
+            #fd1d1d,
+            #fcb045
+        );
+
+    color: white;
+
+    font-weight: bold;
+}
+
+/* MESSAGE */
+
+.message {
+    text-align: center;
+
+    color: #9da3b2;
+
+    padding: 60px 20px;
+
+    grid-column: 1 / -1;
+}
+
+/* INFO */
+
+.info {
+    margin-top: 40px;
+
+    padding: 22px;
+
+    border-radius: 15px;
+
+    background: #7f91c6;
+
+    color: #144eee;
+
+    line-height: 1.7;
+
+    font-size: 14px;
+}
+
+/* MOBILE */
+
+@media(max-width:600px) {
+
+    header {
+        padding: 40px 15px;
+    }
+
+    .results {
+        grid-template-columns: 1fr;
+    }
+
+}
+</style>
+
+</head>
+
+<body>
+
+
+</html>
+<header>
+
+    <h1>
+        Explore on  Instagram
+    </h1>
+
+    <p>
+        shortcut search for  Instagram
+    </p>
+
+    <div class="search-container">
+
+        <input
+            id="search"
+            type="search"
+            placeholder="Search actress e.g. Alia Bhatt"
+            autocomplete="off"
+        >
+
+    </div>
+
+</header>
+
+
+<main class="container">
+
+
+    <div class="buttons">
+
+        <button onclick="searchActress('Alia Bhatt')">
+            Alia Bhatt
+        </button>
+
+        <button onclick="searchActress('Deepika Padukone')">
+            Deepika Padukone
+        </button>
+
+        <button onclick="searchActress('Priyanka Chopra')">
+            Priyanka Chopra
+        </button>
+
+        <button onclick="searchActress('Katrina Kaif')">
+            Katrina Kaif
+        </button>
+
+        <button onclick="searchActress('Kareena Kapoor')">
+            Kareena Kapoor
+        </button>
+
+        <button onclick="searchActress('Shraddha Kapoor')">
+            Shraddha Kapoor
+        </button>
+
+        <button onclick="searchActress('sara ali khan')">
+            sara ali khan
+        </button>
+    </div>
+
+
+    <section
+        class="results"
+        id="results"
+    >
+
+        <div class="message">
+
+            Search anybody on insta  above.
+
+        </div>
+
+    </section>
+
+
+    <div class="info">
+
+        <strong>How this version works</strong>
+
+        <br><br>
+
+        Enter an actress name and the page creates an
+        Instagram search link for that actress.
+
+        <br><br>
+
+        The Instagram button opens Instagram's own website,
+        where you can see the current public content available
+        there.
+
+        <br><br>
+
+        This page does <strong>not scrape Instagram</strong>
+        or bypass Instagram's access controls.
+
+        <br><br>
+
+        To display Instagram images directly inside your own
+        gallery, you would need to connect an appropriate
+        Instagram/Meta API and use content you are authorized
+        to access.
+
+    </div>
+
+</main>
+
+
+<script>
+
+/* =====================================
+   SEARCH ACTRESS
+===================================== */
+
+function searchActress(name) {
+
+    const results =
+        document.getElementById("results");
+
+    const searchBox =
+        document.getElementById("search");
+
+    searchBox.value = name;
+
+
+    /*
+       Instagram search URL.
+
+       encodeURIComponent makes names such as
+       "Kareena Kapoor Khan" safe for the URL.
+    */
+
+    const instagramSearch =
+        "https://www.instagram.com/explore/search/keyword/?" +
+        "q=" +
+        encodeURIComponent(name);
+
+
+    results.innerHTML = `
+
+        <div class="card">
+
+            <div class="instagram-icon">
+                ◎
+            </div>
+
+            <h2>
+                ${escapeHTML(name)}
+            </h2>
+
+            <p>
+                Search Instagram for
+                <strong>
+                    ${escapeHTML(name)}
+                </strong>
+            </p>
+
+            <a
+                class="instagram-button"
+                href="${instagramSearch}"
+                target="_blank"
+                rel="noopener noreferrer"
+            >
+                Open Instagram Search
+            </a>
+
+        </div>
+
+    `;
+}
+
+
+/* =====================================
+   SEARCH BOX
+===================================== */
+
+document
+    .getElementById("search")
+    .addEventListener(
+        "keydown",
+        function(event) {
+
+            if (event.key === "Enter") {
+
+                const name =
+                    this.value.trim();
+
+                if (name) {
+                    searchActress(name);
+                }
+
+            }
+
+        }
+    );
+
+
+/* =====================================
+   SAFELY DISPLAY USER TEXT
+===================================== */
+
+function escapeHTML(text) {
+
+    return text
+        .replace(/&/g, "&amp;")
+        .replace(/</g, "&lt;")
+        .replace(/>/g, "&gt;")
+        .replace(/"/g, "&quot;")
+        .replace(/'/g, "&#039;");
+
+}
+
+</script>
+
+</body>
+</html>
